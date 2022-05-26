@@ -10,6 +10,8 @@ export class FormularioComponent implements OnInit {
   correo: string= 'Correo Electrónico'
   correo1: string= 'Confirmar correo (Verifique que todo esté bien)'
   asunto: string= 'Escriba un mensaje'
+  enviar: string= 'Enviar'
+
 
 
 
