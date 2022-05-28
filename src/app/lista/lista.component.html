@@ -1,0 +1,41 @@
+<div class="container py-4">
+  <div class="row">
+
+
+
+    <div class="col py-3">
+      <h1 *ngIf="nuestrotitulo" [style.color]="InterpolationProperty">{{titulolista}}</h1>
+
+      <ul class="list-group"*ngIf="nuestrotitulo">
+        <li class="list-group-item" *ngFor="let item of listatodo">{{item.titulo}} - {{item.descripcion}}</li>
+
+
+      </ul>
+
+      <div class="col py-3"*ngIf="nuestrotitulo">
+        <button type="button" class="btn btn-primary"(click)="onSubmit()">Eliminar esta lista</button>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+</div>

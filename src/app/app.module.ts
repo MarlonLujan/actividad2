@@ -9,6 +9,7 @@ import { CardsComponent } from './cards/cards.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { FormsModule} from "@angular/forms";
+import { ListaComponent } from './lista/lista.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule} from "@angular/forms";
     NavbarComponent,
     CardsComponent,
     FooterComponent,
-    FormularioComponent
+    FormularioComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,
