@@ -10,6 +10,17 @@ import { FooterComponent } from './footer/footer.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { FormsModule} from "@angular/forms";
 import { ListaComponent } from './lista/lista.component';
+import { FormularioAgregarUsuariosComponent } from './formulario-agregar-usuarios/formulario-agregar-usuarios.component';
+import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
+import {RouterModule} from "@angular/router";
+import{ observable } from "rxjs";
+import { HttpClientModule } from "@angular/common/http";
+ import { MatGridListModule } from "@angular/material/grid-list";
+import { MatCardModule } from "@angular/material/card";
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -18,13 +29,20 @@ import { ListaComponent } from './lista/lista.component';
     CardsComponent,
     FooterComponent,
     FormularioComponent,
-    ListaComponent
+    ListaComponent,
+    FormularioAgregarUsuariosComponent,
+    ListaUsuariosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatCardModule,
+    MatGridListModule,
+
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

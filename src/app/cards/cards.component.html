@@ -1,13 +1,11 @@
 <div class="container" id="informacion" style="display:block">
   <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-4 py-5">
-      <div class="card" style="width: 18rem; margin: auto;">
-        <img src="assets/prueba1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">{{camarastreaming}}</h5>
-          <!--Agregar el evento onclick para poder llamar la funcion del Js llamada funciones. hacerlo en todos los botones -->
+    <div class="col-sm-12 col-md-12 col-lg-4 py-5"*ngFor="let item of personajes">
+      <div class="card" style="width: 18rem; margin: auto;" >
+        <img mat-card image src="{{item.image}}" alt="Photo of a Shiba Inu">
+        <div class="card-body" >
+          <h5 class="card-title text-center">{{item.name }}</h5>
 
-          <!--Agregar número a los Onclicks para saber en qué card ando  -->
 
           <button  class="btn btn-primary float-end" onclick="ver_detalle(1)">
 
@@ -16,37 +14,12 @@
             </svg>
             Ver detalle</button>
         </div>
-      </div>
-    </div>
 
-    <div class="col-sm-12 col-md-12 col-lg-4 py-5">
-      <div class="card" style="width: 18rem; margin: auto;">
-        <img src="assets/prueba2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">{{camarafotografica}}</h5>
 
-          <button class="btn btn-primary float-end" onclick="ver_detalle(2)">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
-            Ver detalle</button>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-sm-12 col-md-12 col-lg-4 py-5">
-      <div class="card" style="width: 18rem; margin: auto">
-        <img src="assets/prueba3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">{{lentespro}}</h5>
-          <button  class="btn btn-primary float-end" onclick="ver_detalle(3)">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
-            Ver detalle</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+
+
+

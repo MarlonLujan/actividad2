@@ -1,0 +1,42 @@
+<div class="container">
+
+  <h1>
+    Formulario padre
+  </h1>
+
+  <div class="row">
+
+
+
+
+    <div class="col">
+
+    <form >
+      <div class="form-group">
+        <label for="name" Nombre Usuario></label>
+        <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" #name >
+      </div>
+      <div class="mb-3">
+      </div>
+      <button type="submit" class="btn btn-primary py-2" style="float: right;margin-top: 2rem;" (click)="onSubmit(name.value)">enviar</button>
+      </form>
+
+<div class="row">
+
+<div class="col">
+  <button type= "buttom" class="btn btn-primary" style="float: right;">
+    Usuarios inscritos <span class="badge badge-light "> {{totaluserss}} </span>
+
+  </button>
+</div>
+
+
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<app-lista-usuarios [users]="users"(totalUser)="addnewUser($event)" > </app-lista-usuarios>
